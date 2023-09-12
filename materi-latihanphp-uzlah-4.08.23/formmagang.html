@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Formulir Magang</title>
+    </head>
+
+    <body>
+
+        <h1>Formulir Magang PT. ABC</h1>
+
+        <fieldset> 
+            <legend>
+                Data Pribadi Calon Magang
+            </legend>
+
+            <form>
+                <br>Nama : <input type="text" name="nama" value=""></br>
+                <br>Jenis Kelamin : <input type="radio" name="jeniskelamin" value="laki-laki"> Laki Laki
+                                    <input type="radio" name="jeniskelamin" value="Perempuan"> Perempuan</br>
+                <br>Alamat : <textarea rows="4" cols="25" name="alamat"></textarea>
+                <br>Nomor HP : <input type="text" name="nomerhp" value=""></br>
+                <br>Asal Kampus : <input type="text" name="kampus" value=""></br>
+
+
+                <br>Pilihan Paket Kursus : 
+                <select name="kursus">
+                    <option>Kursus Programming Dasar</option>
+                    <option>Web Design</option>
+                    <option>Kursus Bahasa Inggris</option>
+                </select> 
+            </br>
+            </form>
+        </fieldset>
+
+        <fieldset> 
+            <legend>
+                Pilih Penempatan Yang Diminati
+            </legend>
+
+            <form>
+                <br>Lokasi :
+                <select name="lokasi">
+                    <option>Jakarta</option>
+                    <option>Bogor</option>
+                    <option>Depok</option>
+                </select> 
+                </br>
+
+                <br>Bagian : <input type="checkbox" name="bagian" value="administrasi">administrasi
+                <input type="checkbox" name="bagian" value="tim penjualan">Tim Penjualan
+                <input type="checkbox" name="bagian" value="tim kreatif">Tim Kreatif
+            </form>
+        </fieldset>
+
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Batal">
+        
+    </body>
+    
+</html>

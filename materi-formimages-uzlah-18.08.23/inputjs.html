@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cara Menampilkan file gambar dari form inputan menggunakan javascript</title>
+	<style type="text/css">
+		.container{
+			width: 800px;
+			margin: 0 auto;
+		}
+		input{
+			width: 200px;
+			padding: 3px;
+			border: 1px solid #666;
+			margin-bottom: 20px; 
+		}
+		button{
+			width: 100px;
+			padding: 3px;
+			border: 1px solid #666;
+		}
+		button:hover{
+			background-color: #333;
+			color: white;
+			cursor: pointer;
+		}
+		h1{
+			text-align: center;
+			border-bottom: 1px solid #666;
+			padding-bottom: 20px;
+		}
+ 	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Cara Menampilkan file gambar dari form inputan menggunakan javascript</h1>
+	<form>
+		<input type="text" name="" placeholder="masukan dengan file type">
+		<button>insert</button>
+	</form>
+	<div class="demo"></div>
+</div>
+<script type="text/javascript">
+	var form = document.forms[0] // pakai ini jika ingin menggunakan event submit
+	var button = document.querySelector("button") //pakai ini jika ingin menggunakan event click
+	var demo = document.querySelector(".demo")
+	var input = document.querySelector("input")
+	var imgEl = document.createElement("img");
+	demo.appendChild(imgEl)
+ 
+	form.addEventListener("submit", (e) =>{
+		e.preventDefault()
+		var valImg = input.value;
+		imgEl.setAttribute("src", valImg)
+		imgEl.setAttribute("style", "width: 800px")
+ 	})
+    
+	input.addEventListener("keydown", ()=>{
+		var tot = this.input;
+		tot.style.border = "1px solid blue"
+	})
+	input.addEventListener("mouseout", ()=>{
+		var tot = this.input;
+		tot.style.border = "1px solid #666"
+	})
+</script>
+</body>
+</html>

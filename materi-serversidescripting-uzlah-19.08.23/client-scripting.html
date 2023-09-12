@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+<center>APLIKASI KREDIT SANGAT SEDERHANA</center>
+<h3>
+<script language="JavaScript">
+<!--
+function showpay()
+{
+if ((document.calc.loan.value == null || document.calc.loan.value.length == 0) ||
+ (document.calc.months.value == null || document.calc.months.value.length == 0)||
+ (document.calc.rate.value == null || document.calc.rate.value.length == 0))
+{ document.calc.pay.value = "Incomplete data";
+}
+else
+{
+var pinjaman = document.calc.loan.value;
+var bulan = document.calc.months.value;
+var bunga = document.calc.rate.value;
+var admin = document.calc.admin.value;
+
+document.calc.allPay.value = (pinjaman / bulan) + (pinjaman * (bunga/100)) + parseInt(admin) + ".000";
+}
+}
+</script>
+
+<!-- side scripting ya dia engga keliatan script(bentuk penghitungannya) di website -->
+
+<center>
+    <br/>
+    <form method="_POST" name="calc">
+        <table border="0">
+            <tbody>
+                <tr>
+                    <th bgcolor="#aaaaaa" width=""50%>
+                        <span style="color: blue;">Deskripsi</span>
+                    </th>
+                    <th bgcolor="#aaaaaa" width=""50%>
+                        <span style="color: blue;">Input Data</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td bgcolor="#eeeee">Jumlah Pinjaman</td>
+                    <td align="right" bgcolor="#aaeeaa"><input name="loan" size="10" type="text"/></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#eeeee">Jumlah Bulan Pinjaman</td>
+                    <td align="right" bgcolor="#aaeeaa"><input name="months" size="10" type="text"/></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#eeeee">Suku Bunga</td>
+                    <td align="right" bgcolor="#aaeeaa"><input name="rate" size="10" type="text"/></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#eeeee">Administrasi</td>
+                    <td align="right" bgcolor="#aaeeaa"><input name="admin" size="10" type="text"/></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#fbbcba">Pembayaran Perbulan</td>
+                    <td align="right" bgcolor="#fbbcba"><b><i>Total </i></b><input name="allPay" size="10" type="text"/></td>
+                </tr><tr>
+                    <td align="center" bgcolor="#aaeeaa"><input onclick="showpay()" type="button" value="Hitung"/></td>
+                    <td align="center" bgcolor="#aaeeaa"><input  type="reset" value="Reset"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+    <span style="font-size: small;">Masukkan angka atau bentuk desimal, tanpa komen (#penulisan desimal menggunakan TITIK, bukan KOMA) <br> Jika dimasukkan selain angka, maka akan terjadi kesalahan (error)</span>
+</center>
+</body>
+
+
+</html>
