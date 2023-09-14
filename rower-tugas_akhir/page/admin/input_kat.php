@@ -1,9 +1,9 @@
 <form method="post" class="form-group">
 	<div class="col-md-8" style="margin-bottom:20px;">
-	<input type="text" name="kategori" placeholder="kategori baru" style="width:600px;" class="form-control">
+	<input type="text" name="kategori" placeholder="New Category" style="width:600px;" class="form-control">
 	</div>
 	<div class="col-md-1">
-	<input type="submit" name="simpan" value="simpan" class="btn btn-success">
+	<input type="submit" name="simpan" value="Add" class="btn btn-primary">
 	</div>
 </form>
 <?php

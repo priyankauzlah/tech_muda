@@ -6,7 +6,7 @@ $qry_kategori = mysqli_query($koneksi_uzlah,"SELECT * from kategori");
 <div style="margin-top:30px;width:100%,height:50px;text-align:center;background:#007DBC;color:#fff;line-height:60px;font-size:20px; margin-bottom:25px;">
 <b>Data Kategori</b>
 </div>
-<a href="index.php?page=kategori&aksi=input" class="btn btn-primary" style="margin:17px;"><span class="glyphicon glyphicon-plus">  TAMBAH KATEGORI</span></a>
+<a href="index.php?page=kategori&aksi=input" class="btn btn-primary" style="margin:17px;"><span class="glyphicon glyphicon-plus">  ADD NEW CATEGORY</span></a>
 <?php
 @$aksi = $_GET['aksi'];
 if($aksi=="input")

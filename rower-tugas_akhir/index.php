@@ -63,8 +63,8 @@ include"config.php";
       <?php
       include"koneksi_uzlah.php";
       @$idkat = $_GET['id'] ;
-      $qrysepedakat = mysqli_query($conn,"SELECT * from sepeda where id_ketegori='$idkat'");
-      $qrysepeda= mysqli_query($conn,"SELECT * from sepeda");
+      $qrysepedakat = mysqli_query($koneksi_uzlah,"SELECT * from sepeda where id_ketegori='$idkat'");
+      $qrysepeda= mysqli_query($koneksi_uzlah,"SELECT * from sepeda");
       if($idkat==0){
       while($sepeda = mysqli_fetch_assoc($qrysepeda)) {
       ?>

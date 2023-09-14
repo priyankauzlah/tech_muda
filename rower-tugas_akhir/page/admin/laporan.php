@@ -7,7 +7,7 @@ if($act=="detail")
 	include("detail_pembelian.php");
 }else{
 ?>
-<div style="margin-top:30px;width:100%,height:50px;text-align:center;background:#0000ff;color:#fff;line-height:60px;font-size:20px;margin-bottom:20px;">
+<div style="margin-top:30px;width:100%,height:50px;text-align:center;background:#007DBC;color:#fff;line-height:60px;font-size:20px;margin-bottom:20px;">
 <b>Laporan Transaksi</b>
 </div>
 <table class="table table-bordered">

@@ -1,7 +1,7 @@
 <?php
 include"koneksi_uzlah.php";
 $id = $_GET['id'];
-$qry = mysqli_query($conn,"SELECT * from sepeda where id_sepeda='$id'");
+$qry = mysqli_query($koneksi_uzlah,"SELECT * from sepeda where id_sepeda='$id'");
 $data = mysqli_fetch_assoc($qry);
 ?>
 <!DOCTYPE html>
@@ -84,7 +84,7 @@ $data = mysqli_fetch_assoc($qry);
       <div class="row">
       <?php
       include"koneksi_uzlah.php";
-      $qrysepeda= mysqli_query($conn,"SELECT * from sepeda");
+      $qrysepeda= mysqli_query($koneksi_uzlah,"SELECT * from sepeda");
       while($sepeda = mysqli_fetch_assoc($qrysepeda)) {
       ?>
 

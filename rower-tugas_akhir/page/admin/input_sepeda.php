@@ -14,10 +14,10 @@ Adding Product
 			<option><?php echo $kategori['kategori']; ?></option>
 			<?php } ?>
 	</select><br>
-	<input type="text" name="nama" placeholder="Nama Sepeda" class="form-control"><br>
-	<input type="file" name="gambar" placeholder="Gambar Sepeda" class="form-control"><br>
-	<input type="text" name="deskripsi" placeholder="Deskripsi Sepeda" class="form-control"><br>
-	<input type="text" name="harga" placeholder="Harga Sepeda" class="form-control"><br>
-	<input type="text" name="stok" placeholder="Stok Sepeda" class="form-control"><br>
+	<input type="text" name="nama" placeholder="Product Name" class="form-control"><br>
+	<input type="file" name="gambar" placeholder="Product Image" class="form-control"><br>
+	<input type="text" name="deskripsi" placeholder="Product Description" class="form-control"><br>
+	<input type="text" name="harga" placeholder="Product Price" class="form-control"><br>
+	<input type="text" name="stok" placeholder="Product Stock" class="form-control"><br>
 	<input type="submit" name="simpan" value="ADD" class="btn btn-primary"><br>
 	</form>
