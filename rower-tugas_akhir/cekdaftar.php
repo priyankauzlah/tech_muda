@@ -1,5 +1,5 @@
 <?php
-include"conn.php";
+include"koneksi_uzlah.php";
 $nama = $_POST['nama'];
 $username = $_POST['username'];
 $password = $_POST['password'];

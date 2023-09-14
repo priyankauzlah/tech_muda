@@ -1,6 +1,6 @@
 <?php
-include"../../conn.php";
-$q = mysqli_query($conn,"SELECT * FROM chekout");
+include"../../koneksi_uzlah.php";
+$q = mysqli_query($koneksi_uzlah,"SELECT * FROM chekout");
 @$act = $_GET['act'];
 if($act=="detail")
 {
@@ -17,7 +17,7 @@ if($act=="detail")
  		<th style=" background: #E6E6FA; "><center>Aksi</center></th>
 	<?php while($c=mysqli_fetch_assoc($q)){?>
 	<tr>
-		<td><center><?php $data=mysqli_fetch_assoc(mysqli_query($conn,"SELECT * from customer where id_pembeli='$c[id_pembeli]'"));$nama=$data['nama']; echo $nama; ?></center></td>
+		<td><center><?php $data=mysqli_fetch_assoc(mysqli_query($koneksi_uzlah,"SELECT * from customer where id_pembeli='$c[id_pembeli]'"));$nama=$data['nama']; echo $nama; ?></center></td>
  		<td><center><?php echo $c['tanggal']; ?></center></td>
  		<td><center><?php echo $c['status_terima']; ?></center></td>
  		<td><center><a href="index.php?page=laporan&act=detail&id=<?php echo $c['id_pembeli']; ?> "><span class="glyphicon glyphicon-eye-open"></span></a> | <a href="konfirmasi_transaksi.php?id=<?php echo $c['id_chekout']; ?>&id_pembeli=<?php echo $c['id_pembeli']; ?>"><span class="glyphicon glyphicon-check"></span></a></center></td>

@@ -1,7 +1,7 @@
 <?php
-include"conn.php";
-$kat = mysqli_query($conn,"SELECT * from kategori");
+include"koneksi_uzlah.php";
+$kat = mysqli_query($koneksi_uzlah,"SELECT * from kategori");
 while($data_kat = mysqli_fetch_assoc($kat)){
 ?>
-<li><a href="index.php?id=<?php echo $data_kat['id_ketegori'] ?>"><?php echo $data_kat['kategori']; ?></a></li>
+<li  style="background:#007DBC;color:#fff;"><a href="index.php?id=<?php echo $data_kat['id_ketegori'] ?>"><?php echo $data_kat['kategori']; ?></a></li>
 <?php } ?>

@@ -17,18 +17,18 @@ $nama = $_SESSION['nama'];
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>TokoSaya.Com</title>
+    <title>Admin - Rower.Com</title>
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top" style="background:#0000ff;">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background:#007DBC;">
       <div class="container-fluid">
         <div class="navbar-header">
           
-          <a class="navbar-brand" href="#" style="color:#fff; font-size:30px;">Toko<b>Saya.Com</b></a>
+        <a class="navbar-brand" href="#"><img src="../../images/logo.png" style="width:150px; margin-top: -7px;"></a>
         </div>
         <div class="collapse navbar-collapse">
 
@@ -36,9 +36,9 @@ $nama = $_SESSION['nama'];
         <div class="nav navbar-nav navbar-right">
          <ul id="nav">
 
-          <li style="background:#0000ff;color:#fff;"><a href="#"><span class="glyphicon glyphicon-user" style="color:#fff;"> <?php echo $nama; ?></span></a>
+          <li style="background:#007DBC;color:#fff;"><a href="#"><span class="glyphicon glyphicon-user" style="color:#fff;"> <?php echo $nama; ?></span></a>
               <ul>
-                <li style="background:#0000ff;color:#fff;"><a href="outpage.php"><span class="glyphicon glyphicon-log-out">Keluar</span></a></li>
+                <li style="background:#007DBC;color:#fff;"><a href="outpage.php"><span class="glyphicon glyphicon-log-out">Keluar</span></a></li>
               </ul>
           </li>
         </ul>
@@ -53,11 +53,11 @@ $nama = $_SESSION['nama'];
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="index.php?page=kategori">Kategori</a></li>
-            <li><a href="index.php?page=buku">Barang/Buku</a></li>
-            <li><a href="index.php?page=customer">Customer</a></li>
-            <li><a href="index.php?page=laporan">Laporan</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="index.php?page=kategori">CATEGORY</a></li>
+            <li><a href="index.php?page=sepeda">PRODUCT</a></li>
+            <li><a href="index.php?page=customer">CUSTOMER</a></li>
+            <li><a href="index.php?page=laporan">REPORT</a></li>
           </ul>
         </div>
         <div class="container-fluid">

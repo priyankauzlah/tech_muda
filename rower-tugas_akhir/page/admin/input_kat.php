@@ -7,12 +7,12 @@
 	</div>
 </form>
 <?php
-include"../../conn.php";
+include"../../koneksi_uzlah.php";
 @$sim = $_POST['simpan'];
 if($sim)
 {
 	$kat = $_POST['kategori'];
-	mysqli_query($conn,"INSERT into kategori set kategori='$kat'");
+	mysqli_query($koneksi_uzlah,"INSERT into kategori set kategori='$kat'");
 	header("location:index.php?page=kategori");
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-include"../../conn.php";
+include"../../koneksi_uzlah.php";
 $a=$_POST['id_ketegori'];
 $b=$_POST['kategori'];
 

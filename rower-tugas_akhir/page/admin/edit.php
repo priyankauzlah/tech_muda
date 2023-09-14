@@ -1,5 +1,5 @@
 <?php
-include"../../conn.php";
+include"../../koneksi_uzlah.php";
 $a=$_GET['id'];
 $kat=mysqli_query($conn,"SELECT * FROM kategori WHERE id_ketegori='$a'");
 $bo = mysqli_fetch_assoc($kat);

@@ -1,5 +1,5 @@
 <?php
-include"../../conn.php";
+include"../../koneksi_uzlah.php";
 $q = mysqli_query($conn,"SELECT * FROM customer");
 ?>
 <div style="margin-top:30px;width:100%,height:50px;text-align:center;background:#0000ff;color:#fff;line-height:60px;font-size:20px;margin-bottom:20px;">
@@ -9,7 +9,7 @@ $q = mysqli_query($conn,"SELECT * FROM customer");
 		<th style=" background: #E6E6FA; "><center>Nama Customer</center></th>
  		<th style=" background: #E6E6FA; ""><center>Username</center></th>
  		<th style=" background: #E6E6FA; ""><center>Password</center></th>
- 		<th style=" background: #E6E6FA; ""><center>Aksi</center></th>
+ 		<th style=" background: #E6E6FA; ""><center>Action</center></th>
 	<?php while($c=mysqli_fetch_assoc($q)){?>
 	<tr>
 		<td><?php echo $c['nama']; ?></td>

@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Dodol BUKU</title>
+    <title>Dodol sepeda</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -19,7 +19,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           
-          <a class="navbar-brand" href="#" style="color:#fff; font-size:30px;">Dodol<b>BUKU.pol</b></a>
+          <a class="navbar-brand" href="#" style="color:#fff; font-size:30px;">Dodol<b>sepeda.pol</b></a>
         </div>
         <div class="collapse navbar-collapse">
 
@@ -47,7 +47,7 @@
      <img src="img/book.jpg">   
     </div>
       <div class="col-md-6" style="margin-left:70px;">
-        <h2><b>Selamat datang di toko buku murah.<h1>Dodol<b>BUKU.pol</b></h1></h2>
+        <h2><b>Selamat datang di toko sepeda murah.<h1>Dodol<b>sepeda.pol</b></h1></h2>
         <p>disini anda bisa membeli dan memesan buku dengan mudah, anda tinggal klik, maka buku sampai di tempat anda. tidak perlu lagi jauh jauh ke toko buku.</p>
       </div>
     </div>

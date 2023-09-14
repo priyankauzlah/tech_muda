@@ -1,12 +1,12 @@
 <?php
-include"../../conn.php";
+include"../../koneksi_uzlah.php";
 $no = 1;
-$qry_kategori = mysqli_query($conn,"SELECT * from kategori");
+$qry_kategori = mysqli_query($koneksi_uzlah,"SELECT * from kategori");
 ?>
-<div style="margin-top:30px;width:100%,height:50px;text-align:center;background:#0000ff;color:#fff;line-height:60px;font-size:20px; margin-bottom:25px;">
+<div style="margin-top:30px;width:100%,height:50px;text-align:center;background:#007DBC;color:#fff;line-height:60px;font-size:20px; margin-bottom:25px;">
 <b>Data Kategori</b>
 </div>
-<a href="index.php?page=kategori&aksi=input" class="btn btn-success" style="margin:17px;"><span class="glyphicon glyphicon-plus"> TAMBAH KATEGORI</span></a>
+<a href="index.php?page=kategori&aksi=input" class="btn btn-primary" style="margin:17px;"><span class="glyphicon glyphicon-plus">  TAMBAH KATEGORI</span></a>
 <?php
 @$aksi = $_GET['aksi'];
 if($aksi=="input")
@@ -22,8 +22,8 @@ else if($aksi=="edit")
 <table class="table table-bordered" style="margin-top:15px;margin-left:17px; width:96%;">
  
 	<th style=" background: #E6E6FA;"><center>No</center></th>
-	<th style=" background: #E6E6FA;"><center>Kategori</center></th>
-	<th style=" background: #E6E6FA;"><center>Aksi</center></th>
+	<th style=" background: #E6E6FA;"><center>Category</center></th>
+	<th style=" background: #E6E6FA;"><center>Action</center></th>
 	<?php
 	 while($data = mysqli_fetch_assoc($qry_kategori)) { ?>
 	<tr>
