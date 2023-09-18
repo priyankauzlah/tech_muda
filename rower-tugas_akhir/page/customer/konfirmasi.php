@@ -7,6 +7,8 @@ $id_pembeli = $_SESSION['id_pembeli'];
 $query_checkout = mysqli_query($koneksi_uzlah,"SELECT * from  chekout where id_pembeli='$id_pembeli'");
 $data_chekout = mysqli_fetch_assoc($query_checkout);
 ?>
+
+<div  style="margin:50px;">
 <h3><b>RECIPIENT :</b></h3>
 <table>
 	<tr>
@@ -55,5 +57,6 @@ $qry = mysqli_query($koneksi_uzlah,"SELECT * from keranjang where id_pembeli='$i
 	<td colspan="3">Total Price</td><td>Rp.<?php $t_bayar=$bayar+20000; echo number_format($t_bayar); ?>,00</td>
 </tr>
 </table>
-<p>Please confirm receipt of the goods if you have received the goods, so that you can carry out the transaction again <a href="konfirmasi_terima.php?id=<?php echo $id_pembeli; ?>" class="btn btn-primary">Confirm</a></p>
+<h4>Please confirm receipt of the goods if you have received the goods, so that you can carry out the transaction again <a href="konfirmasi_terima.php?id=<?php echo $id_pembeli; ?>" class="btn btn-primary">Confirm</a></h4>
+</div>
 </div>

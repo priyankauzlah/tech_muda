@@ -33,7 +33,6 @@ $data = mysqli_fetch_assoc($qry);
         <div class="nav navbar-nav navbar-right">
          <ul id="nav">
           <li><a href="index.php" style="background:#007DBC;,color:#fff;"><span class="glyphicon glyphicon-home"> HOME | </span></a></li>
-          <li class="a"><a href="" style="background:#007DBC;color:#fff;"><span class="glyphicon glyphicon-shopping-cart"> CART | </span></a></li>
           <li><a href="" style="background:#007DBC;color:#fff;" ><span class="glyphicon glyphicon-list"> CATEGORY | </span></a>
 <ul>
 <li><?php include("kat.php");?></li>

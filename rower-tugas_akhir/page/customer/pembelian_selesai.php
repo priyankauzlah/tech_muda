@@ -23,11 +23,12 @@ $data_chekout = mysqli_fetch_assoc($query_checkout);
 		<td><p><b>Phone Number</b></p></td>	<td>: <?php echo $data_chekout['nomor_tlp']; ?></td>
 	</tr>
 </table>
+
 <h3><b>ORDER DATA</b></h3>
 <?php
 $qry = mysqli_query($koneksi_uzlah,"SELECT * from keranjang where id_pembeli='$id_pembeli'");
 ?>
-<div>
+<div class="jumbotron">
 <table class="table table-bordered">
 	<th>Name</th><th>Price</th><th>Qty</th><th>Price</th>
 	<?php while($keranjang=mysqli_fetch_assoc($qry)){?>

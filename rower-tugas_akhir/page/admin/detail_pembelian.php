@@ -16,7 +16,7 @@ $total_bayar = $bayar+20000;
  		<th style=" background: #E6E6FA; ""><center>Total Bayar</center></th>
 	<?php while($c=mysqli_fetch_assoc($q)){?>
 	<tr>
-		<td><center><?php $data=mysqli_fetch_assoc(mysqli_query($koneksi_uzlah,"SELECT * from sepeda where id_sepeda='$c[id_sepeda]'"));$nama=$data['judul']; echo $nama; ?></center></td>
+		<td><center><?php $data=mysqli_fetch_assoc(mysqli_query($koneksi_uzlah,"SELECT * from sepeda where id_sepeda='$c[id_sepeda]'"));$nama=$data['nama']; echo $nama; ?></center></td>
  		<td><center><?php echo $c['qty']; ?></center></td>
  		<td><center><?php echo $c['total_harga']; ?></center></td>
  		<td><center><?php echo $total_bayar; ?></center></td>
